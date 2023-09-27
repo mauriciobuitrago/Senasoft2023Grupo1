@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: io.cucumber:html-formatter:12.0.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="io.cucumber" artifactId="html-formatter" version="12.0.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.cucumber/html-formatter/12.0.0/43d2b5d43ea077af42fe1735ff45abc238217183/html-formatter-12.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.cucumber/html-formatter/12.0.0/176a5d9fe62233c62522e00befa39bd30b6030c1/html-formatter-12.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
