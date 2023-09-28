@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Login" skipped="0" tests="1" time="21.82" timestamp="2023-09-28 11:52:19"><testcase name="login successfully"><failure message="&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;</failure><system-err>
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;&#13;
+co.com.senasoft2023.stepdefinitions.loginStepdefinition.heCouldSeeHisNameInTheHomePage(loginStepdefinition.java:46)&#13;
+✽.he could see his name in the home page(src/test/resources/features/login.feature:7)&#13;
+</system-err></testcase></testsuite>
