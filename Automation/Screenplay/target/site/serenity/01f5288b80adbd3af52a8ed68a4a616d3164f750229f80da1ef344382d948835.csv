@@ -1,2 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
 "Login","login successfully","SUCCESS","2023-09-28T10:08:26.5261468-05:00[America/Bogota]","0.0","22.49"
+"Register","Successful Register","SUCCESS","2023-09-28T10:47:47.1609793-05:00[America/Bogota]","0.0","9.37"
+"Register","Unsuccessful Register","SUCCESS","2023-09-28T10:47:56.792413-05:00[America/Bogota]","0.0","5.42"
