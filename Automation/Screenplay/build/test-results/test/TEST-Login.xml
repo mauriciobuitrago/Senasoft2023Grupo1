@@ -1,27 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Login" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-09-28T15:08:26" hostname="DESKTOP-F707HJU" time="22.746">
+<testsuite name="Login" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-09-28T16:52:19" hostname="DESKTOP-F707HJU" time="22.165">
   <properties/>
-  <testcase name="login successfully" classname="Login" time="22.746"/>
+  <testcase name="login successfully" classname="Login" time="22.165">
+    <failure message="java.lang.AssertionError: &#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:316)
+	at co.com.senasoft2023.stepdefinitions.loginStepdefinition.heCouldSeeHisNameInTheHomePage(loginStepdefinition.java:46)
+	at ✽.he could see his name in the home page(src/test/resources/features/login.feature:7)
+</failure>
+  </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[sept. 28, 2023 10:08:27 A. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+  <system-err><![CDATA[sept. 28, 2023 11:52:20 A. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 117.0.5938.92 (67649b10b92bb182fba357831ef7dd6a1baa5648-refs/branch-heads/5938_62@{#14}) on port 9757
+Starting ChromeDriver 117.0.5938.92 (67649b10b92bb182fba357831ef7dd6a1baa5648-refs/branch-heads/5938_62@{#14}) on port 34091
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-sept. 28, 2023 10:08:29 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+sept. 28, 2023 11:52:22 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
-        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
-  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
- (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
-  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
- (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
-        /_/                                                                
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
 
-TEST PASSED: login successfully
-----------------------------------------------------------------------------
+TEST FAILED: login successfully
+--------------------------------------------------------------------------
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Then validationlogin should be (true)
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Expected: is <true> but: was <false>
 ]]></system-err>
 </testsuite>

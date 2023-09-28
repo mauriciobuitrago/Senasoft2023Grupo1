@@ -12,4 +12,6 @@ public class Loginpage {
             .locatedBy("//input[@type=\"password\"]");
     public static final Target BTN_SUBMIT = Target.the("click submit button")
             .locatedBy("//button[@type=\"submit\"]");
+    public static final Target LBL_GREET = Target.the("greeting text")
+            .locatedBy("//*[@id=\"indexsearch\"]/div[1]/div/div/div/div/header/h1/span");
 }

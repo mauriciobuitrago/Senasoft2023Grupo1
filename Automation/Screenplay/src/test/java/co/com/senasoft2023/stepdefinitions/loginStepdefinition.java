@@ -1,15 +1,21 @@
 package co.com.senasoft2023.stepdefinitions;
 
+import co.com.senasoft2023.questions.validationlogin;
+import co.com.senasoft2023.tasks.login;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.Cast;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
+import org.hamcrest.Matchers;
 import org.openqa.selenium.WebDriver;
+
+import java.util.regex.Matcher;
 
 public class loginStepdefinition {
 
@@ -31,11 +37,14 @@ public class loginStepdefinition {
 
     @When("^he user insert valid credentials$")
     public void heUserInsertValidCredentials() {
+        OnStage.theActorInTheSpotlight().attemptsTo(login.enter());
 
     }
 
     @Then("^he could see his name in the home page$")
     public void heCouldSeeHisNameInTheHomePage() {
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(validationlogin.compare()
+                , Matchers.is(true)));
     }
 
 }
